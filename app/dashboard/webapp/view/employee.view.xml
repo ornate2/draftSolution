@@ -1,7 +1,36 @@
 <mvc:View controllerName="dashboard.controller.employee"
-    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns:mvc="sap.ui.core.mvc"
+      xmlns:l="sap.ui.layout"
+    xmlns:core="sap.ui.core"
+    displayBlock="true"
     xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
-        <content />
+     <Page
+        id="page"
+        title="{i18n>title}"
+    >
+        <content>
+            <Panel
+                width="auto"
+                class="sapUiResponsiveMargin"
+                accessibleRole="Region"
+            >
+                <Title text="Employee" />
+                <core:Fragment
+                    fragmentName="dashboard.view.fragment.Employee"
+                />
+            </Panel>
+            <Panel
+                width="auto"
+                class="sapUiResponsiveMargin"
+            >
+                <core:Fragment fragmentName="dashboard.view.fragment.ApplyLeave" />
+            </Panel>
+            <Panel
+                width="auto"
+                class="sapUiResponsiveMargin"
+            >
+                <core:Fragment fragmentName="dashboard.view.fragment.HR" />
+            </Panel>
+        </content>
     </Page>
 </mvc:View>

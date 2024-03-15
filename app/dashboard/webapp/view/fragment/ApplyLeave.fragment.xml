@@ -1,0 +1,26 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core">
+    <Dialog title="Apply Leave" id="leaveDialog">
+        <content>
+            <l:Grid defaultSpan="XL2 L3 M4 S6">
+                <Text text="Select a Leave:" class="sapUiSmallMargin"/>
+                <Select class="sapUiSmallMarginEnd" valueState="Success">
+                    <core:Item icon="sap-icon://meal" text="Casual Leave (CL)" selected="true"/>
+                    <core:Item icon="sap-icon://meal" text="Sick leave (SL)"/>
+                    <core:Item icon="sap-icon://meal" text="Leave without pay (LWP)"/>
+                    <core:Item icon="sap-icon://meal" text="Paternity leave (PL)"/>
+                    <core:Item icon="sap-icon://meal" text="Compensatory Off"/>
+                </Select>
+                <Text text="Start Date:" class="sapUiSmallMargin" id="leaveTypeSelect"/>
+                <DatePicker valueFormat="yyyy-MM-dd" displayFormat="short"/>
+                <Text text="End Date:" class="sapUiSmallMargin"/>
+                <DatePicker valueFormat="yyyy-MM-dd" displayFormat="short"/>
+                <Text text="Reason for Leave:" class="sapUiSmallMargin"/>
+                <TextArea placeholder="Enter reason for leave"/>
+            </l:Grid>
+        </content>
+        <buttons>
+            <Button text="Close" press="onClose"/>
+            <Button text="Submit" press="onSubmit"/>
+        </buttons>
+    </Dialog>
+</core:FragmentDefinition>
