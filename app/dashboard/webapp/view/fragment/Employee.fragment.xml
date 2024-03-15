@@ -1,0 +1,194 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+     xmlns:mvc="sap.ui.core.mvc"
+    xmlns:l="sap.ui.layout"
+    displayBlock="true"
+  
+>
+ <VBox class="leaveCountsBox">
+		 <FlexBox alignItems="Center" justifyContent="Center" class="panelContainer">
+		<Panel headerText="Casual Leave (CL)" headerLevel="H4" fixed="true" class="box1 customPanelColor1">
+            <content>
+              <ImageContent
+					class="sapUiLargeMarginTop  icon1"
+					src="sap-icon://calendar"
+					description="Calendar Icon"
+					press="press" />
+					 <List class="leaveCountsList">
+						<items>
+							<StandardListItem title="Available: 6"/>
+							<StandardListItem title="Taken: 6"/>
+						</items>
+					</List>
+            </content>
+        </Panel>
+			<Panel headerText="Sick leave (SL)" headerLevel="H4" fixed="true" class="box1 customPanelColor2">
+				<content>
+						<ImageContent
+							class="sapUiLargeMarginTop "
+							src="sap-icon://accidental-leave"
+							description="Icon"
+							press="press">
+						</ImageContent>
+						 <List class="leaveCountsList">
+						<items>
+							<StandardListItem title="Available: 10"/>
+							<StandardListItem title="Taken: 6"/>
+						</items>
+					</List>
+				</content>
+			</Panel>
+			<Panel headerText="Leave without pay (LWP)" headerLevel="H4" fixed="true" class="box1 customPanelColor3">
+				<content>
+						<ImageContent
+							class="sapUiLargeMarginTop "
+							src="sap-icon://unpaid-leave"
+							description="Icon"
+							press="press">
+						</ImageContent>
+						 <List class="leaveCountsList">
+						<items>
+							<StandardListItem title="Available: 12"/>
+							<StandardListItem title="Taken: 6"/>
+						</items>
+					</List>
+				</content>
+			</Panel>
+			<Panel headerText="Paternity leave (PL)" headerLevel="H4" fixed="true" class="box1 customPanelColor4">
+				<content>
+						<ImageContent
+							class="sapUiLargeMarginTop "
+							src="sap-icon://general-leave-request"
+							description="Icon"
+							press="press">
+						</ImageContent>
+						 <List class="leaveCountsList">
+						<items>
+							<StandardListItem title="Available: 18"/>
+							<StandardListItem title="Taken: 6"/>
+						</items>
+					</List>
+				</content>
+			</Panel>
+			<Panel headerText="Compensatory Off" headerLevel="H4" fixed="true" class="box1 customPanelColor5">
+				<content>
+						<ImageContent
+							class="sapUiLargeMarginTop "
+							src="sap-icon://unpaid-leave"
+							description="Icon"
+							press="press">
+						</ImageContent>
+						 <List class="leaveCountsList">
+						<items>
+							<StandardListItem title="Available: 5"/>
+							<StandardListItem title="Taken: 0"/>
+						</items>
+					</List>
+				</content>
+			</Panel>
+			
+			</FlexBox>
+			</VBox>
+
+
+            <Button text="Apply Leave" press="onApplyLeavePress" class="sapUiSmallMarginBottom btn-one"
+			ariaHasPopup="Dialog" />
+					
+<Table>
+    <columns>
+        <Column width="12em">
+            <Text text="Date" />
+        </Column>
+        <Column minScreenWidth="Tablet" demandPopin="true">
+            <Text text="Leave Type" />
+        </Column>
+        <Column width="12em">
+            <Text text="Count" />
+        </Column>
+        <Column width="12em">
+            <Text text="Reason" />
+        </Column>
+        <Column width="12em">
+            <Text text="Approval Status" />
+        </Column>
+    </columns>
+
+    <items>
+        <ColumnListItem>
+            <cells>
+                <ObjectIdentifier title="{Name}" text="4-march-2024" class="sapUiTinyMarginTopBottom" />
+            </cells>
+            <cells>
+                <Text text="Casual Leave (CL)" />
+            </cells>
+            <cells>
+                <Text text="1 Days" />
+            </cells>
+            <cells>
+                <Text text="" />
+            </cells>
+            <cells>
+                <Text text="Pending" />
+                <!-- <core:Icon src="{sap-icon://SAP-icons-TNT/technicalinstance}" /> -->
+            </cells>
+        </ColumnListItem>
+        
+        <ColumnListItem>
+            <cells>
+                <ObjectIdentifier title="{Name}" text="5-march-2024" class="sapUiTinyMarginTopBottom" />
+            </cells>
+            <cells>
+                <Text text="Sick leave (SL)" />
+            </cells>
+            <cells>
+                <Text text="4 Days" />
+            </cells>
+            <cells>
+                <Text text="" />
+            </cells>
+            <cells>
+                <Text text="approved" />
+                <!-- <core:Icon src="{sap-icon://SAP-icons-TNT/technicalinstance}" /> -->
+            </cells>
+        </ColumnListItem>
+         <ColumnListItem>
+            <cells>
+                <ObjectIdentifier title="{Name}" text="6-march-2024" class="sapUiTinyMarginTopBottom" />
+            </cells>
+            <cells>
+                <Text text="Leave without pay (LWP)" />
+            </cells>
+            <cells>
+                <Text text="5 Days" />
+            </cells>
+            <cells>
+                <Text text="" />
+            </cells>
+            <cells>
+                <Text text="Pending" />
+                <!-- <core:Icon src="{sap-icon://SAP-icons-TNT/technicalinstance}" /> -->
+            </cells>
+        </ColumnListItem>
+         <ColumnListItem>
+            <cells>
+                <ObjectIdentifier title="{Name}" text="7-march-2024" class="sapUiTinyMarginTopBottom" />
+            </cells>
+            <cells>
+                <Text text="Casual Leave (CL)" />
+            </cells>
+            <cells>
+                <Text text="2 Days" />
+            </cells>
+            <cells>
+                <Text text="" />
+            </cells>
+            <cells>
+                <Text text="approved" />
+                <!-- <core:Icon src="{sap-icon://SAP-icons-TNT/technicalinstance}" /> -->
+            </cells>
+        </ColumnListItem>
+    </items>
+</Table>		
+	
+</core:FragmentDefinition>
