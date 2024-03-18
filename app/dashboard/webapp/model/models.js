@@ -18,6 +18,15 @@ sap.ui.define([
                 var oModel = new JSONModel(Device);
                 oModel.setDefaultBindingMode("OneWay");
                 return oModel;
+        },
+
+
+        createAppInfoModel : function () {
+            var oModel = new JSONModel({
+                "role": ""
+            });
+            oModel.setDefaultBindingMode("TwoWay");
+            return oModel
         }
     };
 });
