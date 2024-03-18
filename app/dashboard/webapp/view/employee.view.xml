@@ -8,10 +8,12 @@
         id="page"
         title="{i18n>title}"
     >
+      
         <content>
             <Panel
                 width="auto"
                 class="sapUiResponsiveMargin"
+                visible="{=${dashboard>/role} === 'Employee'}"
                 accessibleRole="Region"
             >
                 <Title text="Employee" />
@@ -22,12 +24,14 @@
             <Panel
                 width="auto"
                 class="sapUiResponsiveMargin"
+                visible="{=${dashboard>/role} === 'Employee'}"
             >
                 <core:Fragment fragmentName="dashboard.view.fragment.ApplyLeave" />
             </Panel>
             <Panel
                 width="auto"
                 class="sapUiResponsiveMargin"
+                visible="{=${dashboard>/role} === 'HR'}"
             >
                 <core:Fragment fragmentName="dashboard.view.fragment.HR" />
             </Panel>

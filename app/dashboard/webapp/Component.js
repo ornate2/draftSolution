@@ -29,7 +29,34 @@ sap.ui.define([
 
                 // set the device model
                 this.setModel(models.createDeviceModel(), "device");
+                this.setModel(models.createAppInfoModel(), "dashboard")
+                this._getLoggedInUserInfo();
+
+            },
+
+
+            _getLoggedInUserInfo: function() {
+                var oModel = this.getModel(); 
+                var functionPath = "/LoggedInUser";
+            
+                oModel.read(functionPath, {
+                    success: function(odata) {
+                        if (odata.role === "HR") {
+                            this.getModel("dashboard").setProperty("/role", "HR");
+                        }
+                        if (odata.role === "Employee") {
+                            this.getModel("dashboard").setProperty("/role", "Employee");
+                        }
+                    }.bind(this),
+                    error: function(oError) {
+                        console.log("============================");
+                        console.log(oError);
+                    }
+                });
             }
+
+          
+            
         });
     }
 );
