@@ -8,7 +8,7 @@
 >
  <VBox class="leaveCountsBox">
 		 <FlexBox alignItems="Center" justifyContent="Center" class="panelContainer">
-		<Panel headerText="Casual Leave (CL)" headerLevel="H4" fixed="true" class="box1 customPanelColor1">
+		<Panel headerText="Casual Leave (CL)"  class="box1 customPanelColor1">
             <content>
               <ImageContent
 					class="sapUiLargeMarginTop  icon1"
@@ -23,7 +23,7 @@
 					</List>
             </content>
         </Panel>
-			<Panel headerText="Sick leave (SL)" headerLevel="H4" fixed="true" class="box1 customPanelColor2">
+			<Panel headerText="Sick leave (SL)"  class="box1 customPanelColor2">
 				<content>
 						<ImageContent
 							class="sapUiLargeMarginTop "
@@ -39,7 +39,7 @@
 					</List>
 				</content>
 			</Panel>
-			<Panel headerText="Leave without pay (LWP)" headerLevel="H4" fixed="true" class="box1 customPanelColor3">
+			<Panel headerText="Leave without pay (LWP)"  class="box1 customPanelColor3">
 				<content>
 						<ImageContent
 							class="sapUiLargeMarginTop "
@@ -55,7 +55,7 @@
 					</List>
 				</content>
 			</Panel>
-			<Panel headerText="Paternity leave (PL)" headerLevel="H4" fixed="true" class="box1 customPanelColor4">
+			<Panel headerText="Paternity leave (PL)" class="box1 customPanelColor4">
 				<content>
 						<ImageContent
 							class="sapUiLargeMarginTop "
@@ -71,7 +71,7 @@
 					</List>
 				</content>
 			</Panel>
-			<Panel headerText="Compensatory Off" headerLevel="H4" fixed="true" class="box1 customPanelColor5">
+			<Panel headerText="Compensatory Off" class="box1 customPanelColor5">
 				<content>
 						<ImageContent
 							class="sapUiLargeMarginTop "
