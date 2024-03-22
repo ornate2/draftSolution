@@ -1,0 +1,6 @@
+ID,Employee_ID,LeaveType_ID,StartDate,EndDate,Reason,urgency_code,Status_code,SubmissionDate,ManagerApproval,ManagerComment,HRComment
+1,1001,2,2024-04-01,2024-04-05,Vacation,H,A,2024-03-20,true,Enjoy your time off!,-
+2,1002,1,2024-03-25,2024-03-26,Flu,M,N,2024-03-20,false,Please provide a doctor's note,-
+3,1003,4,2024-05-10,2024-05-20,Bonding time with newborn,H,N,2024-04-01,false,-,-
+4,1004,3,2024-06-15,2024-08-15,Maternity Leave,L,A,2024-05-01,true,Congratulations!,Maternity leave benefits have been processed.
+5,1005,5,2024-04-10,2024-04-11,Family Emergency,M,A,2024-03-30,true,Hope everything is okay!,-
