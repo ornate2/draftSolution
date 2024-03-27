@@ -27,9 +27,9 @@
         "deploy": "cf deploy mta_archives/archive.mtar --retries 1"
     },
     "cds": {
-        "requires": {
+        "requires": {  
             "db": "hana",
-            "auth": "xsuaa"
+            "auth": "mocked"
         }
     }
 }
