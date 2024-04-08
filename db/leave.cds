@@ -27,12 +27,6 @@ entity LeaveRequest : cuid , managed{
   ManagerApproval  : Boolean default false;
   ManagerComment   : String;
   HRComment        : String;
-  conversation  : Composition of many {
-    key ID    : UUID;
-    timestamp : type of managed:createdAt;
-    author    : type of managed:createdBy;
-    message   : String;
-  };
 }
 
 entity Manager : cuid, managed{

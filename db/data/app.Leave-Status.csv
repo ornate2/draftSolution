@@ -1,0 +1,5 @@
+code,name,descr
+N,new,New
+P,pending,Pending
+A,approved,Approved
+R,rejected,Rejected
