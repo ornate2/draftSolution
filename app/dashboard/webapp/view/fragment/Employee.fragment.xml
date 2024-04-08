@@ -8,7 +8,8 @@
 >
  <VBox class="leaveCountsBox">
 		 <FlexBox alignItems="Center" justifyContent="Center" class="panelContainer">
-		<Panel headerText="Casual Leave (CL)"   class="box1 customPanelColor1">
+
+		<Panel headerText="Casual Leave (CL)"  class="box1 customPanelColor1">
             <content>
               <ImageContent
 					class="sapUiLargeMarginTop  icon1"
@@ -55,7 +56,8 @@
 					</List>
 				</content>
 			</Panel>
-			<Panel headerText="Paternity leave (PL)"  class="box1 customPanelColor4">
+
+			<Panel headerText="Paternity leave (PL)" class="box1 customPanelColor4">
 				<content>
 						<ImageContent
 							class="sapUiLargeMarginTop "

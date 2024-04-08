@@ -1,1 +1,40 @@
 /* Enter your custom styles here */
+.centeredImage {
+    display: block;
+    margin: 0 auto;
+}
+.panelContainer > * {
+    margin-right: 10px; /* Adjust the value as per your requirement */
+}
+.customIcon .sapMImg {
+    font-size: 32px; /* Adjust the size as needed */
+    color: blue; /* Adjust the color as needed */
+}
+.sapMImageContentImageIcon.sapUiIcon {
+    font-size: 1.75rem;
+    color: #E91E63 !important;
+    padding-bottom: 0.675rem;
+    position: inherit;
+}
+.customPanelColor1  {
+    background-color: #ffcccc; /* Red background color */
+}
+
+.customPanelColor2  {
+    background-color: #ccffcc; /* Green background color */
+}
+.customPanelColor3  {
+    background-color:#c0e6f7; /* Green background color */
+}
+.customPanelColor4  {
+    background-color: #8bc34a2b; /* Green background color */
+}
+.customPanelColor5  {
+    background-color: #a11d5a57; /* Green background color */
+}
+.sapMPanelHdr {
+    background-color: transparent;
+}
+.sapMPanelBGTranslucent {
+    background-color: #fff0 !important;
+}
