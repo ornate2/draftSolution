@@ -95,7 +95,13 @@
             <Button text="Apply Leave" press="onApplyLeavePress" class="sapUiSmallMarginBottom btn-one"
 			ariaHasPopup="Dialog" />
 					
-<Table>
+<Table
+ headerText="List of Employee's" id="idProductsTable"
+        inset="false"
+        items="{
+            path: '/LeaveRequest'
+        }"
+>
     <columns>
         <Column width="12em">
             <Text text="Date" />
@@ -117,77 +123,24 @@
     <items>
         <ColumnListItem>
             <cells>
-                <ObjectIdentifier title="{Name}" text="4-march-2024" class="sapUiTinyMarginTopBottom" />
+                <ObjectIdentifier text="{StartDate}" class="sapUiTinyMarginTopBottom" />
             </cells>
             <cells>
-                <Text text="Casual Leave (CL)" />
+                <Text text="{LeaveType}" />
             </cells>
             <cells>
                 <Text text="1 Days" />
             </cells>
             <cells>
-                <Text text="" />
+                <Text text="{Reason}" />
             </cells>
             <cells>
-                <Text text="Pending" />
+                <Text text="{Status}" />
                 <!-- <core:Icon src="{sap-icon://SAP-icons-TNT/technicalinstance}" /> -->
             </cells>
         </ColumnListItem>
         
-        <ColumnListItem>
-            <cells>
-                <ObjectIdentifier title="{Name}" text="5-march-2024" class="sapUiTinyMarginTopBottom" />
-            </cells>
-            <cells>
-                <Text text="Sick leave (SL)" />
-            </cells>
-            <cells>
-                <Text text="4 Days" />
-            </cells>
-            <cells>
-                <Text text="" />
-            </cells>
-            <cells>
-                <Text text="approved" />
-                <!-- <core:Icon src="{sap-icon://SAP-icons-TNT/technicalinstance}" /> -->
-            </cells>
-        </ColumnListItem>
-         <ColumnListItem>
-            <cells>
-                <ObjectIdentifier title="{Name}" text="6-march-2024" class="sapUiTinyMarginTopBottom" />
-            </cells>
-            <cells>
-                <Text text="Leave without pay (LWP)" />
-            </cells>
-            <cells>
-                <Text text="5 Days" />
-            </cells>
-            <cells>
-                <Text text="" />
-            </cells>
-            <cells>
-                <Text text="Pending" />
-                <!-- <core:Icon src="{sap-icon://SAP-icons-TNT/technicalinstance}" /> -->
-            </cells>
-        </ColumnListItem>
-         <ColumnListItem>
-            <cells>
-                <ObjectIdentifier title="{Name}" text="7-march-2024" class="sapUiTinyMarginTopBottom" />
-            </cells>
-            <cells>
-                <Text text="Casual Leave (CL)" />
-            </cells>
-            <cells>
-                <Text text="2 Days" />
-            </cells>
-            <cells>
-                <Text text="" />
-            </cells>
-            <cells>
-                <Text text="approved" />
-                <!-- <core:Icon src="{sap-icon://SAP-icons-TNT/technicalinstance}" /> -->
-            </cells>
-        </ColumnListItem>
+        
     </items>
 </Table>		
 	
